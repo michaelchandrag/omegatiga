@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { fetchChatGPTResponse } from "../utils/api";
+// import { fetchChatGPTResponse } from "../utils/api";
 import Search from "../components/Search";
 import TabsMenue from "../components/TabsMenue";
 import ClearChatSmall from "../components/ClearChatSmall";
@@ -11,6 +11,37 @@ const SyntherraDemo = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [placeholderText, setPlaceholderText] = useState("Let the magic begin, Ask a question");
 
+  // Function to fetch response from OpenAI
+  const fetchChatGPTResponse = async (message) => {
+    const apiKey = import.meta.env.VITE_REACT_APP_OPENAI_API_KEY;
+
+    try {
+      const response = await fetch("https://api.openai.com/v1/chat/completions", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${apiKey}`,
+        },
+        body: JSON.stringify({
+          model: "gpt-4",
+          messages: [{ role: "user", content: message }],
+          temperature: 0.7,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        return data.choices[0].message.content;
+      } else {
+        throw new Error(data.error.message || "Failed to fetch response");
+      }
+    } catch (error) {
+      console.error("Error response:", error);
+      throw new Error(error.message || "Failed to fetch response");
+    }
+  };
+
   const handleInputChange = (e) => {
     setUserInput(e.target.value);
   };
@@ -20,19 +51,21 @@ const SyntherraDemo = () => {
     if (!userInput.trim()) return;
 
     setIsLoading(true);
-    setChatResponse(""); // Clear previous response
+    setChatResponse("");
     try {
       const response = await fetchChatGPTResponse(userInput);
       setChatResponse(response);
     } catch (error) {
       setChatResponse("Failed to fetch response. Please try again.");
+      console.log("Error:", error);
     } finally {
       setIsLoading(false);
     }
   };
 
+  // Update userInput with the bodyText from TextFrame click
   const handleTextFrameClick = (text) => {
-    setPlaceholderText(text);
+    setUserInput(text);  // Set the clicked TextFrame bodyText as the user input
   };
 
   return (
@@ -70,7 +103,6 @@ const SyntherraDemo = () => {
                   src="/vuesaxboldmessageadd.svg"
                 />
               </button>
-
             </div>
             <div className="h-full rounded-3xs bg-gray-400 overflow-hidden flex flex-col items-start justify-start py-4 px-3 gap-5">
               <Search property1="Default" />
@@ -83,7 +115,7 @@ const SyntherraDemo = () => {
                 />
                 <TabsMenue
                   description={false}
-                  title="Maximizing Yield with AI in DeFi"               
+                  title="Maximizing Yield with AI in DeFi"
                   component1="/component-11@2x.png"
                   component1IconOverflow="unset"
                   topCircleTop="calc(50% + 26.5px)"
@@ -181,20 +213,17 @@ const SyntherraDemo = () => {
                   />
                   <button
                     type="submit"
-                    className="cursor-pointer flex items-center justify-center gap-2 bg-transparent"
+                    className="cursor-pointer flex items-center justify-center gap-2 bg-transparent text-gray-1200"
                     disabled={isLoading}
                   >
                     {isLoading ? (
                       "Loading..."
                     ) : (
-                      <>
-                        <img
-                          className="h-5 w-5 relative z-[2]"
-                          loading="lazy"
-                          alt="send icon"
-                          src="/send.svg"
-                        />
-                      </>
+                      <img
+                        className="h-[28px] w-[28px]"
+                        alt="Submit Icon"
+                        src="/send.svg"
+                      />
                     )}
                   </button>
                 </form>
@@ -204,7 +233,7 @@ const SyntherraDemo = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SyntherraDemo
+export default SyntherraDemo;
