@@ -5,8 +5,9 @@ const Button = ({
   className = "",
   property1 = "Default",
   label = "Try Demo Version",
-  href = "#",
+  href = "",
 }) => {
+
   return (
     <motion.div
       className={`self-stretch rounded-21xl bg-coral-200 flex flex-row items-center justify-center py-2.5 px-6 gap-4 text-left text-base text-color-white-solid font-helvetica-neue ${className}`}

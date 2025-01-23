@@ -28,7 +28,7 @@ function App() {
         title = "Syntherra";
         metaDescription = "Main page description";
         break;
-      case "/syntherra-demo-version": // Add the new path here
+      case "/syntherra-demo-version":
         title = "Syntherra Demo Version";
         metaDescription = "Description of the Syntherra demo version.";
         break;

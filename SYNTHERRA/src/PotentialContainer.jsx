@@ -11,7 +11,7 @@ const PotentialContainer = ({ className = "" }) => {
     <section
       className={`self-stretch flex flex-row items-start justify-start pt-0 px-0 pb-[76px] box-border max-w-full text-center text-xl text-color-white-solid font-raleway mq450:pb-8 mq450:box-border mq1050:pb-[49px] mq1050:box-border ${className}`}
     >
-      <div className="flex-1 bg-[url('public/section-background@2x.png')] bg-cover bg-no-repeat bg-fixed bg-center overflow-hidden flex flex-col items-center justify-center py-[111px] px-0 box-border relative gap-2.5 max-w-full mq750:pt-[72px] mq750:pb-[72px] mq750:box-border">
+      <div className="flex-1 bg-[url('/section-background@2x.png')] bg-cover bg-no-repeat bg-fixed bg-center overflow-hidden flex flex-col items-center justify-center py-[111px] px-0 box-border relative gap-2.5 max-w-full mq750:pt-[72px] mq750:pb-[72px] mq750:box-border">
         {/* <img
           className="w-full h-full absolute overflow-hidden object-cover"
           alt=""
