@@ -15,7 +15,7 @@ const fetchBrandData = async (brandCode) => {
   }
 };
 
-const CopyCA = ({ className = "", brandCode = "aegisix" }) => {
+const CopyCA = ({ className = "", brandCode = "syntherra" }) => {
   const [brandData, setBrandData] = useState(null);
   const [copyStatus, setCopyStatus] = useState("Copy CA"); // Track the copy button text
 

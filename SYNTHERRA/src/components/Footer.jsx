@@ -18,7 +18,7 @@ const Footer = ({ className = "" }) => {
   useEffect(() => {
     const fetchSocialLinks = async () => {
       try {
-        const response = await fetch("https://api.botfood.id/api/v1/solana/aegisix");
+        const response = await fetch("https://api.botfood.id/api/v1/solana/syntherra");
         const data = await response.json();
         if (response.ok) {
           const { github_url, twitter_url } = data.data;

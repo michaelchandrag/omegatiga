@@ -1,16 +1,13 @@
 import { useMemo } from "react";
+import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 
 const TabsMenue = ({
   className = "",
-  property1 = "Default",
   title = "Enhancing Security in Decentralized Finance",
   description = false,
   component1,
   component1IconOverflow,
-  langchainFlex,
-  langchainHeight,
-  langchainDisplay,
   topCircleTop,
   topLineTop,
 }) => {
@@ -19,14 +16,6 @@ const TabsMenue = ({
       overflow: component1IconOverflow,
     };
   }, [component1IconOverflow]);
-
-  const langchainStyle = useMemo(() => {
-    return {
-      flex: langchainFlex,
-      height: langchainHeight,
-      display: langchainDisplay,
-    };
-  }, [langchainFlex, langchainHeight, langchainDisplay]);
 
   const topCircleStyle = useMemo(() => {
     return {
@@ -41,9 +30,10 @@ const TabsMenue = ({
   }, [topLineTop]);
 
   return (
-    <button
-      className={`bg-transparent cursor-pointer w-[225px] rounded-6xs border-gray-700 border-[1px] border-solid box-border overflow-hidden flex flex-row items-center justify-start p-3 relative gap-3 text-left text-xs text-gray-900 font-space-grotesk ${className}`}
-      data-property1={property1}
+    <motion.button
+      className={`relative bg-transparent cursor-pointer w-[225px] rounded-6xs border-gray-700 border-[1px] border-solid overflow-hidden flex flex-row items-center justify-start p-3 gap-3 text-left text-xs text-gray-900 font-space-grotesk ${className}`}
+      whileHover={{ backgroundColor: "#020203" }} 
+      transition={{ type: "spring", stiffness: 300, damping: 30 }}
     >
       <img
         className="w-4 relative h-4 object-cover hidden z-[0]"
@@ -51,8 +41,8 @@ const TabsMenue = ({
         src={component1}
         style={component1IconStyle}
       />
-      <div className="flex-1 flex flex-row items-center justify-start gap-1 z-[1]">
-        <div className="flex-1 relative" style={langchainStyle}>
+      <div className="flex flex-row items-center justify-start gap-1 z-[1]">
+        <div className="relative">
           {title}
         </div>
         {description && (
@@ -67,7 +57,7 @@ const TabsMenue = ({
         className="w-0.5 absolute !m-[0] top-[calc(50%_-_12px)] right-[-6px] [filter:blur(2px)] rounded-55xl-6 [background:linear-gradient(180deg,_rgba(58,_238,_227,_0.24),_rgba(217,_217,_217,_0.24))] h-6 overflow-hidden shrink-0 z-[3]"
         style={topLineStyle}
       />
-    </button>
+    </motion.button>
   );
 };
 
@@ -77,14 +67,8 @@ TabsMenue.propTypes = {
   description: PropTypes.bool,
   component1: PropTypes.string,
 
-  /** Variant props */
-  property1: PropTypes.number,
-
   /** Style props */
   component1IconOverflow: PropTypes.string,
-  langchainFlex: PropTypes.string,
-  langchainHeight: PropTypes.string,
-  langchainDisplay: PropTypes.string,
   topCircleTop: PropTypes.string,
   topLineTop: PropTypes.string,
 };

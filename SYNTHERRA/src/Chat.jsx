@@ -162,28 +162,30 @@ const Chat = ({ className = "", property1 = "ss" }) => {
             <div className="absolute top-[66px] left-[calc(50%_-_72.5px)] text-sm font-medium text-gray-900">
               What can I help with?
             </div>
-            <TextFrame
-              property1="Default"
-              bodyText="What is your platform about?"
-            />
-            <TextFrame
-              property1="Default"
-              bodyText="Which blockchains does it support?"
-              quesion1Left="359.5px"
-              quesion1Top="108px"
-            />
-            <TextFrame
-              property1="Default"
-              bodyText="Do I need coding skills to use it?"
-              quesion1Left="87.5px"
-              quesion1Top="182px"
-            />
-            <TextFrame
-              property1="Default"
-              bodyText="How does it automate strategies?"
-              quesion1Left="359.5px"
-              quesion1Top="182px"
-            />
+            <button
+              className={`cursor-pointer absolute top-[108px] left-[87.5px] rounded-3xs bg-gray-600 w-[260px] h-[62px] overflow-hidden flex flex-row items-center justify-center p-4 box-border gap-2.5 text-center text-xs text-gray-1200 font-space-grotesk`}
+            >
+              <div className="flex-1 relative z-[0]">What is your platform about?</div>
+              <div className="w-[129px] absolute !m-[0] bottom-[-82px] left-[calc(50%_-_72px)] [filter:blur(8px)] rounded-140xl bg-steelblue h-[74px] overflow-hidden shrink-0 z-[1]" />
+            </button>
+            <button
+              className={`cursor-pointer absolute top-[108px] left-[359.5px] rounded-3xs bg-gray-600 w-[260px] h-[62px] overflow-hidden flex flex-row items-center justify-center p-4 box-border gap-2.5 text-center text-xs text-gray-1200 font-space-grotesk`}
+            >
+              <div className="flex-1 relative z-[0]">Which blockchains does it support?</div>
+              <div className="w-[129px] absolute !m-[0] bottom-[-82px] left-[calc(50%_-_72px)] [filter:blur(8px)] rounded-140xl bg-steelblue h-[74px] overflow-hidden shrink-0 z-[1]" />
+            </button>
+            <button
+              className={`cursor-pointer absolute top-[182px] left-[87.5px] rounded-3xs bg-gray-600 w-[260px] h-[62px] overflow-hidden flex flex-row items-center justify-center p-4 box-border gap-2.5 text-center text-xs text-gray-1200 font-space-grotesk`}
+            >
+              <div className="flex-1 relative z-[0]">Do I need coding skills to use it?</div>
+              <div className="w-[129px] absolute !m-[0] bottom-[-82px] left-[calc(50%_-_72px)] [filter:blur(8px)] rounded-140xl bg-steelblue h-[74px] overflow-hidden shrink-0 z-[1]" />
+            </button>
+            <button
+              className={`cursor-pointer absolute top-[182px] left-[359.5px] rounded-3xs bg-gray-600 w-[260px] h-[62px] overflow-hidden flex flex-row items-center justify-center p-4 box-border gap-2.5 text-center text-xs text-gray-1200 font-space-grotesk`}
+            >
+              <div className="flex-1 relative z-[0]">How does it automate strategies?</div>
+              <div className="w-[129px] absolute !m-[0] bottom-[-82px] left-[calc(50%_-_72px)] [filter:blur(8px)] rounded-140xl bg-steelblue h-[74px] overflow-hidden shrink-0 z-[1]" />
+            </button>
             <PromptBox property1="Default" />
           </div>
         </div>
