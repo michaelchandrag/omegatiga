@@ -9,7 +9,7 @@ const CopyCA = () => {
   useEffect(() => {
     const fetchBrandData = async () => {
       try {
-        const response = await fetch("https://api.botfood.id/api/v1/solana/aegisix"); 
+        const response = await fetch("https://api.botfood.id/api/v1/solana/ethereon"); 
         const data = await response.json();
 
         if (response.status === 200 && data.success && data.data.key_ca) {
