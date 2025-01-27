@@ -40,12 +40,12 @@ const PotentialCard = ({
       whileHover="hover"
     >
       <motion.div
-        className="text-base self-stretch relative leading-[24px] font-medium"
+        className="text-base self-stretch relative leading-[24px] font-medium font-helvetica-neue"
         variants={titleVariants}
       >
         {title}
       </motion.div>
-      <div className="self-stretch relative text-sm leading-[24px] font-light">
+      <div className="self-stretch relative text-sm leading-[24px] font-light font-helvetica-neue">
         {description}
       </div>
     </motion.div>

@@ -18,10 +18,10 @@ const UseCase = () => {
           <div class="z-0 absolute inset-0 m-auto w-[454px] h-[454px] bg-[#f14c4c] rounded-full blur-[600px]"></div>
           <div className="self-stretch flex flex-row items-start justify-center max-w-full">
             <div className="flex flex-col items-start justify-start gap-2 max-w-full">
-              <h3 className="m-0 self-stretch relative text-inherit leading-[24px] font-bold font-[inherit] mq450:text-lgi mq450:leading-[19px]">
+              <h3 className="m-0 self-stretch relative text-inherit leading-[24px] font-bold font-helvetica-neue mq450:text-lgi mq450:leading-[19px]">
                 POTENTIAL USE CASES
               </h3>
-              <div className="relative text-base leading-[24px] font-light text-left">
+              <div className="relative text-base leading-[24px] font-light text-left font-helvetica-neue">
                 Revolutionizing DeFi Applications with Interlinc Protocol
               </div>
             </div>
@@ -46,10 +46,10 @@ const UseCase = () => {
           <div className="max-w-[547px] w-full flex flex-col items-start justify-start gap-8 mq750:gap-4">
             <div className="w-full flex flex-col items-start justify-start py-0 px-0 box-border gap-6 font-helvetica-neue">
               <div className="w-full flex flex-col items-start justify-start gap-2 text-color-white-solid">
-                <h3 className="m-0 w-[548px] relative leading-[24px] font-thin flex items-center max-w-full mq450:text-lgi mq450:leading-[19px] text-5xl">
+                <h3 className="m-0 w-[548px] relative leading-[24px] font-thin flex items-center max-w-full mq450:text-lgi mq450:leading-[19px] text-5xl font-helvetica-neue">
                   Meet NexusGuide: Your Decentralized Navigator
                 </h3>
-                <div className="w-[548px] relative text-xl leading-[24px] flex items-center max-w-full mq450:text-base mq450:leading-[19px]">
+                <div className="w-[548px] relative text-xl leading-[24px] flex items-center max-w-full mq450:text-base mq450:leading-[19px] font-helvetica-neue">
                   An intelligent AI assistant powered by state-of-the-art NLP
                   models, NexusGuide offers
                 </div>
@@ -62,7 +62,7 @@ const UseCase = () => {
                     alt=""
                     src="/frame-2.svg"
                   />
-                  <div className="relative leading-[24px] font-light">
+                  <div className="relative leading-[24px] font-light font-helvetica-neue">
                     Personalized onboarding to Ethereon Nexus’s ecosystem
                   </div>
                 </div>
@@ -73,7 +73,7 @@ const UseCase = () => {
                     alt=""
                     src="/frame-2.svg"
                   />
-                  <div className="relative leading-[24px] font-light">
+                  <div className="relative leading-[24px] font-light font-helvetica-neue">
                     Deep insights into algorithmic performance and stability
                     metrics
                   </div>
@@ -85,7 +85,7 @@ const UseCase = () => {
                     alt=""
                     src="/frame-2.svg"
                   />
-                  <div className="relative leading-[24px] font-light shrink-0">
+                  <div className="relative leading-[24px] font-light shrink-0 font-helvetica-neue">
                     Real-time solutions for navigating the platform’s features and
                     optimizing user strategies
                   </div>

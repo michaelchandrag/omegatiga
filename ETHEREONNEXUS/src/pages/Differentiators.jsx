@@ -49,10 +49,10 @@ const Differentiators = () => {
             <div className="flex flex-row items-center justify-start [row-gap:20px] w-full z-[1] mq1050:flex-wrap gap-24">
               <div className="w-[503px] flex flex-col items-start justify-start gap-2 max-w-full mq750:min-w-full mq1050:flex-1">
                 <div className="self-stretch flex flex-col items-start justify-start gap-4">
-                  <h1 className="m-0 self-stretch relative text-inherit leading-[24px] font-bold font-[inherit] mq450:text-lgi mq450:leading-[14px] mq1050:text-7xl mq1050:leading-[19px]">
+                  <h1 className="m-0 self-stretch relative text-inherit leading-[24px] font-bold font-helvetica-neue mq450:text-lgi mq450:leading-[14px] mq1050:text-7xl mq1050:leading-[19px]">
                     KEY DIFFERENTIATORS
                   </h1>
-                  <div className="relative text-base leading-[24px] font-light">
+                  <div className="relative text-base leading-[24px] font-light font-helvetica-neue">
                     Elevate your tokenization experience with Noveris, where
                     cutting-edge innovation meets trustless decentralization.
                   </div>

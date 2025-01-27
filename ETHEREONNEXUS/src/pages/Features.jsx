@@ -15,10 +15,10 @@ const Features = () => {
       >
         <div className="max-w-[1280px] w-full flex flex-col items-center justify-start gap-8 mq750:gap-4">
           <div className="flex flex-col items-center justify-start py-0 px-5 box-border gap-4 max-w-full text-color-white-solid">
-            <h3 className="m-0 self-stretch relative text-inherit leading-[24px] font-bold font-[inherit] mq450:text-lgi mq450:leading-[19px]">
+            <h3 className="m-0 self-stretch relative text-inherit leading-[24px] font-bold font-helvetica-neue mq450:text-lgi mq450:leading-[19px]">
               KEY FEATURES
             </h3>
-            <div className="relative text-base leading-[24px] font-light text-left">
+            <div className="relative text-base leading-[24px] font-light text-left font-helvetica-neue">
               Unlock the Power of Innovation with Interlinc Protocol’s Core
               Features
             </div>

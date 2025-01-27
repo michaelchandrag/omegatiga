@@ -22,10 +22,10 @@ const FeatureItem = ({
       style={featureStyle}
     >
       <div className="self-stretch flex-1 flex flex-col items-start justify-start gap-2.5 text-color-white-solid">
-        <div className="self-stretch relative leading-[24px] font-medium">
+        <div className="self-stretch relative leading-[24px] font-medium font-helvetica-neue">
           {title}
         </div>
-        <div className="self-stretch relative text-sm leading-[24px] font-light">
+        <div className="self-stretch relative text-sm leading-[24px] font-light font-helvetica-neue">
           {description}
         </div>
       </div>

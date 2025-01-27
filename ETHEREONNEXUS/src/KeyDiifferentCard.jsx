@@ -37,17 +37,15 @@ const KeyDiifferentCard = ({
       initial="initial"
       whileHover="hover"
     >
-      {/* Title Section with animation */}
       <motion.div
-        className="self-stretch relative leading-[24px] font-medium"
+        className="self-stretch relative leading-[24px] font-medium font-helvetica-neue"
         variants={titleVariants}
       >
         {title}
       </motion.div>
 
-      {/* Description Section with animation */}
       <motion.div
-        className="self-stretch relative text-sm leading-[24px] font-light"
+        className="self-stretch relative text-sm leading-[24px] font-light font-helvetica-neue"
         variants={descriptionVariants}
       >
         {description}

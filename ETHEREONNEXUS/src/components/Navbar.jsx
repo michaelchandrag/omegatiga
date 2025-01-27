@@ -40,7 +40,7 @@ const Navbar = ({ className = "" }) => {
       <div className="w-full flex items-center justify-center gap-6">
         <motion.a
           href="/"
-          className="[text-decoration:none] relative leading-[24px] font-light text-lightgray-200 whitespace-nowrap"
+          className="[text-decoration:none] relative leading-[24px] font-light text-lightgray-200 whitespace-nowrap font-helvetica-neue"
           whileHover={{
             y: -7,
             fontWeight: 500,
@@ -52,7 +52,7 @@ const Navbar = ({ className = "" }) => {
         </motion.a>
         <motion.a
           href="/about"
-          className="[text-decoration:none] relative leading-[24px] font-light text-lightgray-200 whitespace-nowrap"
+          className="[text-decoration:none] relative leading-[24px] font-light text-lightgray-200 whitespace-nowrap font-helvetica-neue"
           whileHover={{
             y: -7,
             fontWeight: 500,
@@ -64,7 +64,7 @@ const Navbar = ({ className = "" }) => {
         </motion.a>
         <motion.a
           href="/features"
-          className="[text-decoration:none] relative leading-[24px] font-light text-[inherit] text-lightgray-200 whitespace-nowrap"
+          className="[text-decoration:none] relative leading-[24px] font-light font-helvetica-neue text-lightgray-200 whitespace-nowrap"
           whileHover={{
             y: -7,
             fontWeight: 500,
@@ -76,7 +76,7 @@ const Navbar = ({ className = "" }) => {
         </motion.a>
         <motion.a
           href="/usecase"
-          className="[text-decoration:none] relative leading-[24px] font-light text-[inherit] text-lightgray-200 whitespace-nowrap"
+          className="[text-decoration:none] relative leading-[24px] font-light font-helvetica-neue text-lightgray-200 whitespace-nowrap"
           whileHover={{
             y: -7,
             fontWeight: 500,
@@ -88,7 +88,7 @@ const Navbar = ({ className = "" }) => {
         </motion.a>
         <motion.a
           href="/differentiators"
-          className="[text-decoration:none] relative leading-[24px] font-light text-[inherit] text-lightgray-200 whitespace-nowrap"
+          className="[text-decoration:none] relative leading-[24px] font-light font-helvetica-neue text-lightgray-200 whitespace-nowrap"
           whileHover={{
             y: -7,
             fontWeight: 500,

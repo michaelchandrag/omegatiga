@@ -29,7 +29,7 @@ const UseCaseLeft = ({
         <div className="w-[140px] h-11 flex flex-row items-end justify-start">
           <motion.div
             className="h-[29px] w-5 flex flex-col items-start justify-end pt-0 px-0 pb-[9px] box-border z-[3]"
-            variants={hoverVariants} // Bind hover animation variants
+            variants={hoverVariants}
           >
             <motion.div
               className="ellipse w-5 h-5 relative rounded-[50%]"
