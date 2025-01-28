@@ -22,3 +22,7 @@ body {
 .word {
   @apply translate-y-full;
 }
+
+.font-helvetica-neue {
+  font-family: 'Helvetica Neue', sans-serif;
+}

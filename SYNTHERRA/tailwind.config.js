@@ -37,7 +37,6 @@ module.exports = {
         raleway: "Raleway",
         "ibm-plex-mono": "'IBM Plex Mono'",
         "space-grotesk": "'Space Grotesk'",
-        "helvetica-neue": "'Helvetica Neue'",
       },
       borderRadius: {
         "13xl": "32px",
