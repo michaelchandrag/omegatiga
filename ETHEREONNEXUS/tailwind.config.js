@@ -31,7 +31,7 @@ module.exports = {
       fontFamily: {
         inter: "Inter",
         jost: "Jost",
-        "helvetica-neue": "'Helvetica Neue'",
+        // "helvetica-neue": "'Helvetica Neue'",
         kanit: "Kanit",
       },
       borderRadius: {
