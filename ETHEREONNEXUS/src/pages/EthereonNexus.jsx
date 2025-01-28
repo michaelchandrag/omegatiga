@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const EthereonNexus = () => {
   return (
-    <div className="relative w-dvw h-dvh overflow-hidden flex flex-col items-center justify-between bg-black">
+    <div className="relative w-dvw h-dvh min-h-[882px] overflow-hidden flex flex-col items-center justify-between bg-black">
       <motion.div
         initial={{ y: -100 }}  
         animate={{ y: 0 }}      

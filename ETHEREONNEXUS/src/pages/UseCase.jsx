@@ -8,7 +8,7 @@ import Button from '../components/Button'
 const UseCase = () => {
   return (
     <div className='relative w-full overflow-hidden flex flex-col items-center justify-center bg-black'>
-      <div className='z-20 w-full absolute top-0 left-0'>
+      <div className='z-50 w-full absolute top-0 left-0'>
         <Navbar/>
       </div>
       <div className='w-full flex flex-col items-center justify-center'>

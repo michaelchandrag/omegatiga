@@ -4,9 +4,9 @@ import Footer from '../components/Footer'
 
 const About = () => {
   return (
-    <div className='relative w-dvw h-dvh overflow-hidden flex flex-col items-center justify-center bg-black'>
+    <div className='relative w-dvw h-dvh min-h-[882px] overflow-hidden flex flex-col items-center justify-center bg-black'>
       <div class="absolute inset-0 m-auto w-[454px] h-[454px] bg-[#f14c4c] rounded-full blur-[600px]"></div>
-      <div className='w-full absolute top-0 left-0'>
+      <div className='z-50 w-full absolute top-0 left-0'>
         <Navbar/>
       </div>
       <div className='max-w-[1205px] w-full flex items-center justify-between border border-red'>

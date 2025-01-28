@@ -5,9 +5,9 @@ import FeatureItem from '../FeatureItem'
 
 const Features = () => {
   return (
-    <div className='relative w-dvw h-dvh overflow-hidden flex flex-col items-center justify-center bg-black'>
+    <div className='relative w-dvw h-dvh min-h-[882px] overflow-hidden flex flex-col items-center justify-center bg-black'>
       <div class="z-0 absolute inset-0 m-auto w-[454px] h-[454px] bg-[#f14c4c] rounded-full blur-[600px]"></div>
-      <div className='z-10 w-full absolute top-0 left-0'>
+      <div className='z-50 w-full absolute top-0 left-0'>
         <Navbar/>
       </div>
       <div

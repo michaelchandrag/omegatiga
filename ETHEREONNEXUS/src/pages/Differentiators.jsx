@@ -24,8 +24,8 @@ const Differentiators = () => {
     } else if (!emailRegex.test(email)) {
       setError("Please enter a valid email address.");
     } else {
-      setError(""); // Reset error if email is valid
-      console.log("Email submitted:", email); // Replace with actual form submission logic (e.g., API call)
+      setError("");
+      console.log("Email submitted:", email);
     }
   };
 
@@ -38,7 +38,7 @@ const Differentiators = () => {
         alt=""
         src="/colorbgshape@2x.png"
       />
-      <div className='z-20 w-full absolute top-0 left-0'>
+      <div className='z-50 w-full absolute top-0 left-0'>
         <Navbar/>
       </div>
       <div className='max-w-[1205px] w-full flex flex-col items-center justify-center'>
