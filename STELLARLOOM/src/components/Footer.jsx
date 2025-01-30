@@ -47,10 +47,10 @@ const Footer = ({ className = "" }) => {
     >
       <div className="w-[671px] flex flex-col items-center justify-start py-0 px-5 box-border gap-[60px] max-w-full mq750:gap-[30px]">
         <div className="self-stretch flex flex-col items-center justify-start gap-2">
-          <h3 className="m-0 self-stretch relative text-inherit leading-[25px] font-medium font-[inherit] mq450:text-lgi mq450:leading-[20px]">
+          <h3 className="m-0 self-stretch relative text-inherit leading-[25px] font-medium font-helvetica-neue mq450:text-lgi mq450:leading-[20px]">
             Join Beta Version
           </h3>
-          <div className="self-stretch relative text-sm leading-[25px]">
+          <div className="self-stretch relative text-sm leading-[25px] font-helvetica-neue">
             Curious to see Stellar Loom in action? Sign up now to get early
             access to our demo version!
           </div>
@@ -75,9 +75,9 @@ const Footer = ({ className = "" }) => {
           </button>
         </form>
       </div>
-      <footer className="self-stretch border-aether-primary border-t-[1px] border-solid flex flex-row items-center justify-between pt-[30px] px-8 pb-8 gap-5 text-center text-sm text-aether-primary font-helvetica-neue mq750:flex-wrap">
+      <footer className="self-stretch border-aether-primary border-t-[1px] border-solid flex flex-row items-center justify-between pt-[30px] px-8 pb-8 gap-5 text-center text-sm text-aether-primary mq750:flex-wrap">
         <div className="flex flex-row items-center justify-start py-0 pl-0 pr-[70px] gap-6 mq450:pr-5 mq450:box-border">
-          <div className="relative font-medium inline-block min-w-[69px]">
+          <div className="relative font-medium inline-block min-w-[69px] font-helvetica-neue">
             Follow Us:
           </div>
           <div className="flex flex-row items-center justify-center gap-4">

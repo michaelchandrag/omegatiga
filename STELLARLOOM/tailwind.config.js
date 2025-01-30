@@ -32,7 +32,6 @@ module.exports = {
       spacing: {},
       fontFamily: {
         inter: "Inter",
-        "helvetica-neue": "'Helvetica Neue'",
         jost: "Jost",
         kanit: "Kanit",
         "instrument-sans": "'Instrument Sans'",
