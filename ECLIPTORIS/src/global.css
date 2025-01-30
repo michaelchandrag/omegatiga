@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply leading-[normal] m-0;
+}
+*,
+::before,
+::after {
+  border-width: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.line {
+  @apply overflow-hidden;
+}
+
+.word {
+  @apply translate-y-full;
+}
+
+.font-helvetica-neue {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+@layer utilities {
+  .font-inherit {
+    font-family: inherit;
+  }
+}
